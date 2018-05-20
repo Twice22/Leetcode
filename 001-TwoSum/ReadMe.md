@@ -12,14 +12,14 @@ return [0, 1].
 ```
 
 # 2. Solution
-the most trivial solution would be use 2 loops. For example for the first iteration we will have on our example:
+the most trivial solution would be to use 2 loops. For example for the first iteration we will have on our example:
 + outer loop pointer: 2
 + inner loop pointer: go through values [7, 11, 15]
 
 At each iteration of the inner loop we add the number pointed by the outer loop with the number of the inner loop. We will
 then have in the order: `2+7`, `2+11`, `2+15`. As `2+7` = `9` (= target) we can immediately returns the indices of the elements `2` and `7`. This solution works because we won't have the possibility to have `2+2` (the inner loop starts at `pointer outer loop` + 1). Moreover if we return `[pointer outer loop, pointer inner loop]` we are sure that the elements are sorted in increasing order.
 
-Time complexity: O(n²)
+Time complexity: O(n²) 
 Space complexity: O(1)
 
 Well. This solution is a very naive solution of course. Could we do better? Actually the problem seek to find the sum of
@@ -36,5 +36,5 @@ check if: `y` is in our dictionary (that means we check if `y = n - x`), if this
 __2 things to check__: we need not indice1 == indice2 otherwise we would have use 2 times the same number. So we need to check
 that `y` is in our mapping and indice1 (that we get from iterating through our `nums` array) is different from indice2 (that we get from our mapping). The other thing we need to check is that _indice1 <= indice2_. It is the case. To prove it, let's assume by absurd that _indice2 < indice1_ then that would have mean that `y = n - x` but `x != n - y` where `y` is the number at indice2 and x the number at indice1. Of course this is false, so we just showed by absurd that _indice1 <= indice2_.
 
-Time complexity: O(n)
+Time complexity: O(n) 
 Space complexity: O(n)
