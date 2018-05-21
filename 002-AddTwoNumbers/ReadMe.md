@@ -21,3 +21,6 @@ we iterated through it during our algorithm if we do that we will actually retur
 care of this problem we might just define 2 lists: `mylist` which will be the list we will populate through our 
 algorithm and `dummy` which will just be a list that points to the first node of `mylist`. Then at the end we can just
 return `dummy.next` or `dummy` depending on how we actually initialized the `dummy` list.
+
+Time complexity: O(n)
+Space complexity: O(n) 
