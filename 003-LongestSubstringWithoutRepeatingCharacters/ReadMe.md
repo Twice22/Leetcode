@@ -1,3 +1,4 @@
+
 # Explanation
 
 # 1. Subject
@@ -10,10 +11,11 @@ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer 
 ```
 
 # 2. Solution
-The Naive solution would be to use 2 loops but we can do better. To see what we can do, let's work out an example:
+The Naive solution would be to use 2 loops but we can do better. To see what we can do, let's work out an example:  
 input: `abcucjbjoap`
 
-Let's imagine we iterate (one loop) over the string:
+Let's imagine we iterate (one loop) over the string:  
+
 0. if pointer is on a: longest substring = a
 1. if pointer is on b: longest substring = ab
 2. if pointer is on c: longest substring = abc
@@ -40,5 +42,5 @@ d[c] = 2. But as we iterate through our string, at iteration 4 we encounter anot
 candidate and we update it accordingly...
 And we continue looping...
 
-Time complexity: O(n)
+Time complexity: O(n)  
 Space complexity: O(n)
