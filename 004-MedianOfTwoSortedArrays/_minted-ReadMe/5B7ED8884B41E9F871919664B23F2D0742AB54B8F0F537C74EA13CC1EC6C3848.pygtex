@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{nums1} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{]}
+\PYG{n}{nums2} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}
+\end{Verbatim}

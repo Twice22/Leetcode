@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{nums1} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{9}\PYG{p}{,} \PYG{l+m+mi}{14}\PYG{p}{,} \PYG{l+m+mi}{15}\PYG{p}{,} \PYG{l+m+mi}{30}\PYG{p}{]}
+\PYG{n}{nums2} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{11}\PYG{p}{,} \PYG{l+m+mi}{17}\PYG{p}{]}
+\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{nums1}\PYG{p}{)} \PYG{o}{=} \PYG{l+m+mi}{4} \PYG{c+c1}{\PYGZsh{} middle element = 15}
+\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{nums2}\PYG{p}{)} \PYG{o}{=} \PYG{l+m+mi}{3} \PYG{c+c1}{\PYGZsh{} middle element = 17}
+\end{Verbatim}
