@@ -5,7 +5,6 @@ class Solution:
         :rtype: int
         """        
         best_surface = 0
-        max_height = 0
         
         ptr1, ptr2 = 0, len(height) - 1
         
