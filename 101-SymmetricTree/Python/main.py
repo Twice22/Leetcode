@@ -14,7 +14,7 @@ class Solution:
         
         return i >= j
     
-    def isSymmetric(self, root):
+    def isSymmetric2(self, root):
         """
         :type root: TreeNode
         :rtype: bool
@@ -43,5 +43,21 @@ class Solution:
             nodes = new_nodes
             
         return True
-                
+    
+    def isSymmetric(self, root):
+        if not root:
+            return True
         
+        return self.isSymRec(root.left, root.right)
+    
+    def isSymRec(self, left, right):
+        if left is None and right is None:
+            return True
+        
+        # we go in this case only if we don't go in the former
+        # so naturally it means left is None AND right is not None
+        # or the reverse
+        if left is None or right is None:
+            return False
+        
+        return left.val == right.val and self.isSymRec(left.right, right.left) and self.isSymRec(left.left, right.right)
